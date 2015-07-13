@@ -77,9 +77,10 @@
 						<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 						<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 							<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="http://127.0.0.1/wordpress/wp-content/themes/pourvous/library/images/logo.png" alt="<?php bloginfo('name'); ?>"></a>
-<?php /*							<div class="triangle-up-left right"></div>
-							<div class="triangle-up-right left"></div> */?>
 						</div>
+						<div class="triangle-up-right left"></div>
+						<div class="triangle-top-left right"></div>
+						
 						<?php // if you'd like to use the site description you can un-comment it below ?>
 						<?php // bloginfo('description'); ?>
 						<?php if (is_active_sidebar('header')) { dynamic_sidebar('header'); } ?>
