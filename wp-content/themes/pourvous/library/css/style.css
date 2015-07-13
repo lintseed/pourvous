@@ -1444,8 +1444,8 @@ tRiAnGlEs
 .triangle-up-right {
     width: 0;
     height: 0;
-    padding-left:10%;
     padding-top: 10%;
+    padding-left: 10%;
     overflow: hidden;
 }
 .triangle-up-right:after {
@@ -1453,11 +1453,9 @@ tRiAnGlEs
     display: block;
     width: 0;
     height: 0;
-    margin-left:-300px;
-    margin-top:-100px;
-
-    border-left: 300px solid transparent;
-    border-top: 100px solid #9c8a62;
+    margin-right: -300px;
+    border-top: 100px solid transparent;
+    border-right: 300px solid #9c8a62;
 }
 
 /*Down-right pointing*/
@@ -1528,11 +1526,21 @@ HEADER STYLES
  }
 
 #logo {
-	width:	265px;
-	height:	88px;
-	margin: 20px 0 0 -25px;
-	text-indent: -5000em;
-	background: #beb091 url(../images/sprite.png) 5px 10px no-repeat;
+	width: 116%;
+	height:	auto;
+	margin: 20px 0 0 -8%;
+	line-height: 0;
+	border: 1px solid #998a68;
+}
+#logo a {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 10px 5px 0;
+	line-height: 0;
+	background: #beb091;
+	outline: none;
+	/*background: #beb091 url(../images/sprite.png) 5px 10px no-repeat;*/
 	-webkit-box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,0.25);
 	-moz-box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,0.25);
 	box-shadow: inset 0px 0px 3px 2px rgba(255,255,255,0.25);
@@ -1540,24 +1548,32 @@ HEADER STYLES
 	-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
 }
+#logo a img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
 
 #sidebar-head {
-	margin: 20px 30px;
+	margin: 15px 30px;
 	background: #5e4d21;
-	-webkit-box-shadow: inset 0px 0px 5px 3px rgba(255,255,255,1);
-	-moz-box-shadow: inset 0px 0px 5px 3px rgba(255,255,255,1);
-	box-shadow: inset 0px 0px 5px 3px rgba(255,255,255,1);
-	-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
-	-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
-	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
-}
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+
+	}
+	#sidebar-head .widget_text {
+		text-align: center;
+	}
+		
 #sidebar-head .triangle-up-right {
 	position: relative;
-	left: -25px;
+	left: -5%;
 }
 #sidebar-head .triangle-up-left {
 	position: relative;
-	left: 25px;
+	left: 5%;
 }
 
 /*********************
@@ -1573,6 +1589,7 @@ and more scalable.
 nav {
 	border-bottom: 0;
 	margin: 0;
+	padding: 0 15px;
 	background: #695524;
 	-webkit-box-shadow: 0px -2px 2px 3px rgba(61,48,20,1);
 	-moz-box-shadow: 0px -2px 2px 3px rgba(61,48,20,1);
@@ -1591,7 +1608,7 @@ nav {
 		nav li a {
 			display: block;
 			text-decoration: none;
-			padding: 0.75em;
+			padding: 6px 15px;
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -2075,9 +2092,24 @@ you can add resource intensive styles.
 	/*********************
 	HEADER STYLES
 	*********************/
+	.borderme {
+	    position: absolute;
+	    z-index: 0;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 50px;
+	    background-color: #a99872;
+	    webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.375);
+		-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.375);
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.375);
+	}
 	header #content-head {
 		float: right;
-		margin: 20px 0 0;
+		position: relative;
+		z-index: 2;
+		width: 72%;
+		margin: 15px 0 0;
 		}
 		header nav {
 			}
@@ -2088,12 +2120,29 @@ you can add resource intensive styles.
 				header nav li.current-menu-item {
 					background: #8f7f5a;
 				}
-		header .left {
-			width: 20%;
+		header #content-head img {
+			width: 100%;
+			height: auto;
+		}
+	header .left {
+		width: 20%;
+		position: relative;
+		z-index: 2;
+		}
+		header .widget {
 			}
-			header .widget {
-			background: #5e4d21;
+			header .widget hr {
+				width: 100%;
+				margin: 30px 0 30px -10px;
+				padding: 0 10px;
+				border-width: 0;
+				border-top: 1px solid #b1a881;
+				webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.375);
+				-moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.375);
+				box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.375);
+				background: transparent;
 			}
+
 
 	/*********************
 	NAVIGATION STYLES
@@ -2163,7 +2212,6 @@ you can add resource intensive styles.
 		margin-top: 2.2em; }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
 		margin-bottom: 0.75em; }
 
 	.widget {

@@ -46,6 +46,7 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				
+				<div class="borderme"></div>
 				<div id="inner-header" class="wrap cf">
 					
 					<div id="content-head" class="right">
@@ -65,14 +66,20 @@
 							)); ?>
 						</nav>
 						
-						<image>
+						<?php 
+						if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+							the_post_thumbnail('full');
+						} 
+						?>
 					</div>
 										
 					<div id="sidebar-head" class="block left">
 						<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-						<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-						<div class="triangle-up-left right"></div>
-						<div class="triangle-up-right left"></div>
+						<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+							<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="http://127.0.0.1/wordpress/wp-content/themes/pourvous/library/images/logo.png" alt="<?php bloginfo('name'); ?>"></a>
+<?php /*							<div class="triangle-up-left right"></div>
+							<div class="triangle-up-right left"></div> */?>
+						</div>
 						<?php // if you'd like to use the site description you can un-comment it below ?>
 						<?php // bloginfo('description'); ?>
 						<?php if (is_active_sidebar('header')) { dynamic_sidebar('header'); } ?>
