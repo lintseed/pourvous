@@ -44,8 +44,15 @@
 
 		<div id="container">
 
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-				
+			<?php
+				global $post;
+				$headerBackground = get_post_meta($post->ID, 'header_color', true); 
+				if (empty($headerBackground)) { $headerBackground = 'green'; }
+			?>
+
+			<header class="header <?php echo $headerBackground; ?>" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+				<div class="header-background">
+
 				<div class="borderme"></div>
 				<div id="inner-header" class="wrap cf">
 					
@@ -86,6 +93,7 @@
 						<?php if (is_active_sidebar('header')) { dynamic_sidebar('header'); } ?>
 					</div>
 					
+				</div>
 				</div>
 
 			</header>

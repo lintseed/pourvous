@@ -1401,19 +1401,23 @@ tRiAnGlEs
 /*********************
 HEADER STYLES
 *********************/
-.header {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4317+0,2d3100+100 */
-	background: #3f4317; /* Old browsers */
-	background: -moz-linear-gradient(top, #3f4317 0%, #2d3100 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4317), color-stop(100%,#2d3100)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #3f4317 0%,#2d3100 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #3f4317 0%,#2d3100 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #3f4317 0%,#2d3100 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #3f4317 0%,#2d3100 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4317', endColorstr='#2d3100',GradientType=0 ); /* IE6-9 */
+.header.green {
+	background-color: #3f4317;
+}
+.header.teal {
+	background-color: #1b463a;
+}
+.header-background {
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.2))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000',GradientType=0 ); /* IE6-9 */
  }
-
 #logo {
+	position: relative;
 	width: 116%;
 	height:	auto;
 	margin: 20px 0 0 -8%;
@@ -1444,6 +1448,7 @@ HEADER STYLES
 }
 
 #sidebar-head {
+	z-index: 2;
 	margin: 15px 30px;
 	background: #5e4d21;
 	-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
@@ -1456,11 +1461,13 @@ HEADER STYLES
 		
 #sidebar-head .triangle-up-right {
 	position: relative;
+	z-index: -1;
 	left: -25%;
-	top: -25%;
+	top: -42px;
 }
 #sidebar-head .triangle-top-left {
 	position: relative;
+	z-index: -1;
 	left: 5%;
 }
 
