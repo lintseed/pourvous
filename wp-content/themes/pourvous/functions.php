@@ -58,6 +58,9 @@ function bones_ahoy() {
   // cleaning up excerpt
   add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
+  remove_filter( 'the_content', 'wpautop' );
+  remove_filter( 'the_excerpt', 'wpautop' );
+
 } /* end bones ahoy */
 
 // let's get this party started

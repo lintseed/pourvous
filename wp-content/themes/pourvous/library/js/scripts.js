@@ -110,11 +110,15 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
-  /*
-   * Let's fire off the gravatar function
-   * You can remove this if you don't need it
-  */
-  loadGravatars();
+
+  $('#fancy-about').click(function() {
+    $.fancybox({
+        type: 'inline',
+        content: '#fancyboxID-1'
+    });
+
+    
+});
 
 
 }); /* end of as page load scripts */

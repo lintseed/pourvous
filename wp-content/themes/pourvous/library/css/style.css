@@ -342,7 +342,7 @@ input[type="submit"] {
 	/* 2 */
 	cursor: pointer;
 	/* 3 shame */
-	background: url(../images/texture.png) 0 0 repeat; 
+	background: #cbbc9a url(../images/texture.png) 0 0 repeat; 
 	-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
 	-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
@@ -702,10 +702,10 @@ them however you see fit.
 		padding-right: 0.75em;
 		width: 33.33%; }
 
-	.t-2of3 {
+	.t-2of3 {/*
 		float: left;
 		padding-right: 0.75em;
-		width: 66.66%; }
+		width: 66.66%; */}
 
 	.t-1of4 {
 		float: left;
@@ -1298,12 +1298,49 @@ style a page via class
 /* if user is logged in */
 /* paged items like search results or archives */
 /* individual paged (i.e. body.paged-3) */
+.home header.header {
+	position: relative; /* layer on top of content */
+	-webkit-box-shadow: 1px 4px 3px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 1px 4px 3px 0px rgba(0,0,0,0.4);
+	box-shadow: 1px 4px 3px 0px rgba(0,0,0,0.4);
+}
+.home #content,
+.home .block { /* flush */
+	margin-top: 0;
+}
+.home #products {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-.wrap {
+.wrap,
+.gallery {
 	width: 96%;
 	margin: 0 auto; }
+.block,
+.block-alt {
+	margin: 10px 0 50px;
+	padding: 0 !important;
+	color: #c0b8ab;
+	background: #3f3417;
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+}
+.block-alt {
+	position: relative;
+	background: #575b25;
+}
+.block-content {
+	margin: -30px 0 0;
+	padding: 20px;
+}
+.auto-width {
+	display: table;
+	width: auto;
+}
 
 /*********************
 LINK STYLES
@@ -1323,6 +1360,23 @@ a, a:visited {
 		*/
 		-webkit-tap-highlight-color: #c8c2b4; }
 
+.block.plain {
+	background: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.block.fancy {
+	cursor: pointer;
+	}
+	.entry-content .fancy p {
+		margin: 0;
+		padding: 0;
+		}
+		.entry-content .fancy img {
+			margin: 0;
+			padding: 0;
+		}
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -1359,6 +1413,45 @@ h5, .h5 {
 	text-transform: uppercase;
 	letter-spacing: 2px; }
 
+/*********************
+CUSTOM THINGS
+*********************/
+.block h2,
+.block-alt h3,
+.block .texture {
+	margin: auto;
+	font-size: 135%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #c0b8ab;
+	outline: 0;
+	background: #5f4d21 url(../images/texture.png) 0 0 repeat; 
+	-moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    /*
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+*/
+}
+.block h2,
+.block-alt h3 {
+	position: relative;
+	z-index: 9;
+	top: -20px;
+	display: inline-block;
+	margin: 0 0 -20px;
+	padding: 5px 20px;
+	border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	border: 2px solid #484743;
+}
+.block-alt h3 {
+	position: absolute;
+	bottom: 0;
+}
 
 /*********************
 tRiAnGlEs
@@ -1401,11 +1494,28 @@ tRiAnGlEs
 /*********************
 HEADER STYLES
 *********************/
+header.header {
+	-webkit-box-shadow: 1px 4px 3px 0px rgba(95,77,33,0.4);
+	-moz-box-shadow: 1px 4px 3px 0px rgba(95,77,33,0.4);
+	box-shadow: 1px 4px 3px 0px rgba(95,77,33,0.4);
+}
 .header.green {
 	background-color: #3f4317;
 }
 .header.teal {
 	background-color: #1b463a;
+}
+.header.wine {
+	background-color: #400902;
+}
+.header.caramel {
+	background-color: #8d6c08;
+}
+.header.brown {
+	background-color: #3f2f09;
+}
+.header.caramel {
+	background-color: #8d6c08;
 }
 .header-background {
 	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%); /* FF3.6+ */
@@ -1530,8 +1640,7 @@ POSTS & CONTENT STYLES
 		border-bottom: 1px solid #f8f9fa;
 		padding: 1.5em; }
 	.hentry footer {
-		padding: 1.5em;
-		border-top: 1px solid #f8f9fa; }
+		}
 		.hentry footer p {
 			margin: 0; }
 
@@ -1559,6 +1668,7 @@ POSTS & CONTENT STYLES
 /* entry content */
 .entry-content {
 	padding: 1.5em 1.5em 0;
+	padding: 0;
 	/*
 	image alignment on a screen this size may be
 	a bit difficult. It's set to start aligning
@@ -1643,6 +1753,62 @@ POSTS & CONTENT STYLES
 /* gallery caption styles */
 .tags {
 	margin: 0; }
+
+#products {
+	margin: 0 0 40px;
+	padding: 0 10%;
+	text-align: center;
+	}
+	#products ul {
+		display: table;
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+		margin: auto;
+		color: #c8c2b4;
+		text-align: center;
+		}
+		#products ul li {
+			display: table-cell;
+			width: auto;
+			height: auto;
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+			}
+			#products ul li a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding: 10px 0;
+				font-size: 120%;
+				text-decoration: none;
+				-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+				-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+				box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+			}
+			#products ul li.spirits a {
+				background-color: #2f4e4b;
+			}
+			#products ul li.wine a {
+				background-color: #592821;	
+			}
+			#products ul li.beer a {
+				background-color: #43461c;
+			}
+			#products ul li.cigars a {
+				background-color: #5f4d21;
+			}
+			#products ul li.party a {
+				background-color: #8f6d0c;
+				}	
+				#products ul li img {
+					display: block;
+					margin: 0 auto 10px;
+					max-width: 200px;
+					max-height: 300px;
+				}
+
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -1841,6 +2007,117 @@ SIDEBARS & ASIDES
 	margin-bottom: 1.5em; }
 
 /*********************
+GALLERIES
+*********************/
+.gallery {
+	margin-bottom: 1.6em;
+}
+
+.gallery-item {
+	display: inline-block;
+	padding: 1.79104477%;
+	text-align: center;
+	vertical-align: top;
+	width: auto%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-icon {
+	-webkit-box-shadow: 0px 0px 4px 0px rgba(255,255,255,0.4);
+	-moz-box-shadow: 0px 0px 4px 0px rgba(255,255,255,0.4);
+	box-shadow: 0px 0px 4px 0px rgba(255,255,255,0.4);
+}
+.gallery-icon img {
+	display: block;
+	margin: 0 auto;
+	-moz-box-shadow: inset 2px 2px 2px rgba(255,255,255,0.7), inset -2px -2px 2px rgba(0,0,0,0.7);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255,255,255,0.7), inset -2px -2px 2px rgba(0,0,0,0.7);
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,0.7), inset -2px -2px 2px rgba(0,0,0,0.7);
+    border: 1px solid #353535;
+}
+
+.gallery-caption {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	display: block;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+/*********************
+FANCYBOX PLUGIN
+*********************/
+#fancybox-wrap {
+	padding: 0 !important;
+	color: #c0b8ab;
+	background: #3f3417;
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
+}
+#fancybox-outer #fancybox-content {
+	width: auto !important;
+	height: auto !important;
+	display: inline-block;
+	padding: 20px;
+	border: 1px dotted yellow;
+}
+#fancybox-content,
+#fancybox-outer {
+	background-color: transparent !important;
+}
+#fancybox-wrap div {
+	color: #c0b8ab;
+	border-width: 0 !important;
+}
+#fancybox-content #fancyboxID-1,
+#fancybox-content .hentry {
+	width: auto !important;
+	height: auto !important;
+}
+
+/*********************
 FOOTER STYLES
 *********************/
 .footer {
@@ -1987,10 +2264,14 @@ you can add resource intensive styles.
 	.clear {
 		clear: left;
 	}
+	.padded {
+		padding: 20px;
+	}
 	/*********************
 	LAYOUT & GRID STYLES
 	*********************/
-	.wrap {
+	.wrap,
+	.gallery {
 	width: 760px; }
 
 	/*********************
@@ -2181,7 +2462,8 @@ you can add resource intensive styles.
 	be seen on the Desktop.
 	
 	******************************************************************/
-	.wrap {
+	.wrap,
+	.gallery {
 		width: 1040px; } }
 /*********************
 LARGE VIEWING SIZE
