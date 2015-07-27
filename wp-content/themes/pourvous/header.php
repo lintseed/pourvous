@@ -83,7 +83,7 @@
 					<div id="sidebar-head" class="block left">
 						<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 						<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
-							<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="http://127.0.0.1/wordpress/wp-content/themes/pourvous/library/images/logo.png" alt="<?php bloginfo('name'); ?>"></a>
+							<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/dev/wp-content/themes/pourvous/library/images/logo.png" alt="<?php bloginfo('name'); ?>"></a>
 						</div>
 						<div class="triangle-up-right left"></div>
 						<div class="triangle-top-left right"></div>

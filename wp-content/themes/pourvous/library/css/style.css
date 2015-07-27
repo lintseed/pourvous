@@ -313,6 +313,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+a.button,
 button,
 input {
 	line-height: normal; }
@@ -323,6 +324,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
+a.button,
 button,
 select {
 	text-transform: none; }
@@ -334,6 +336,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *		`input` and others.
  */
+a.button,
 button,
 html input[type="button"],
 input[type="reset"],
@@ -347,7 +350,12 @@ input[type="submit"] {
 	-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5), -2px 0px 2px 0px rgba(255,255,255,0.25), inset 0px 0px 5px 3px rgba(255,255,255,0.1);
 }
-
+a.button {
+  padding: 2px 6px 3px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px outset buttonface
+}
 /**
  * Re-set default cursor for disabled elements.
  */
@@ -1463,6 +1471,7 @@ CUSTOM THINGS
 }
 .spirits .block-alt {
 	background: #1b463a;
+	min-height: 367px
 }
 .wine .block-alt {
 	background: #50231d;
@@ -1503,7 +1512,16 @@ CUSTOM THINGS
 		max-width: 200px;
 		max-height: 300px;
 		border: 10px solid #aba179;
-	}/*
+	}
+	.home .block-alt img,
+	.blog .block-alt img {
+		width: 90%;
+		height: auto;
+	}
+	.home .block-alt p {
+		margin: 0 30px;
+	}
+	/*
 			#products ul li a {
 				display: block;
 				width: 100%;
@@ -2409,7 +2427,7 @@ you can add resource intensive styles.
 		/* highlight current page */
 		/* end current highlighters */ }
 		.nav ul {
-			background: #323944;
+			background: #3f3417;
 			margin-top: 0; }
 		.nav li {
 			float: left;
@@ -2429,11 +2447,12 @@ you can add resource intensive styles.
 			.nav li ul.sub-menu,
 			.nav li ul.children {
 				margin-top: 0;
-				border: 1px solid #ccc;
+				border: 1px solid #5f4d21;
 				border-top: 0;
 				position: absolute;
 				visibility: hidden;
 				z-index: 8999;
+				text-align: left;
 				/* highlight sub-menu current page */ }
 				.nav li ul.sub-menu li,
 				.nav li ul.children li {
@@ -2448,7 +2467,7 @@ you can add resource intensive styles.
 						border-right: 0;
 						display: block;
 						width: 180px;
-						border-bottom: 1px solid #ccc; }
+						border-bottom: 1px solid #5f4d21; }
 					.nav li ul.sub-menu li:last-child a,
 					.nav li ul.children li:last-child a {
 						border-bottom: 0; }

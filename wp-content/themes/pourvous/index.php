@@ -5,49 +5,34 @@
 				<div id="inner-content">
 
 						<main id="main" class="m-all t-2of3 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+							
+							<div class="center block plain" style="width: 60%;">
+								
+								<a href="#" class="button left">Select Category</a><a href="#" class="button right">Select Archived</a><h2>What's New</h2>
+								
+								<div class="center block fancy">
+									featured post
+								</div>
+															
+								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+									<div class="block-alt">
+										<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+											<h3><?php the_title(); ?></h3>
+											<?php 
+												if ( has_post_thumbnail() ) {
+													the_post_thumbnail('full');
+												} else {
+													the_excerpt();
+												} ?>
+										</a>
+									</div>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+								<?php endwhile; ?>
+								
+										<?php bones_page_navi(); ?>
 
-								<header class="article-header">
-
-									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<p class="byline entry-meta vcard">
-                                                                        <?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
-                       								/* the time the post was published */
-                       								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
-                       								/* the author of the post */
-                       								'<span class="by">'.__( 'by', 'bonestheme').'</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
-                    							); ?>
-									</p>
-
-								</header>
-
-								<section class="entry-content cf">
-									<?php the_content(); ?>
-								</section>
-
-								<footer class="article-footer cf">
-									<p class="footer-comment-count">
-										<?php comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), __( '<span>%</span> Comments', 'bonestheme' ) );?>
-									</p>
-
-
-                 	<?php printf( '<p class="footer-category">' . __('filed under', 'bonestheme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
-
-                  <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
-
-
-								</footer>
-
-							</article>
-
-							<?php endwhile; ?>
-
-									<?php bones_page_navi(); ?>
-
-							<?php else : ?>
+								<?php else : ?>
 
 									<article id="post-not-found" class="hentry cf">
 											<header class="article-header">
@@ -61,9 +46,10 @@
 										</footer>
 									</article>
 
-							<?php endif; ?>
+								<?php endif; ?>
 
-
+							</div>
+							
 						</main>
 
 					<?php get_sidebar(); ?>

@@ -1,0 +1,153 @@
+[22-Jul-2015 03:17:19 UTC] All-in-One Event Calendar: mkdir(): Permission denied @ /home/donaldbonds/public_html/dev/wp-content/plugins/all-in-one-event-calendar/vendor/twig/Environment.php:1243 #2
+[22-Jul-2015 03:17:20 UTC] All-in-One Event Calendar: mkdir(): Permission denied @ /home/donaldbonds/public_html/dev/wp-content/plugins/all-in-one-event-calendar/vendor/twig/Environment.php:1243 #2
+[22-Jul-2015 21:53:43 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query SELECT 
+			e.post_id,
+			e.timezone_name,
+			e.recurrence_rules,
+			e.exception_rules,
+			e.allday,
+			e.instant_event,
+			e.recurrence_dates,
+			e.exception_dates,
+			e.venue,
+			e.country,
+			e.address,
+			e.city,
+			e.province,
+			e.postal_code,
+			e.show_map,
+			e.contact_name,
+			e.contact_phone,
+			e.contact_email,
+			e.contact_url,
+			e.cost,
+			e.ticket_url,
+			e.ical_feed_url,
+			e.ical_source_url,
+			e.ical_organizer,
+			e.ical_contact,
+			e.ical_uid,
+			e.longitude,
+			e.latitude,
+			e.show_coordinates,
+			GROUP_CONCAT( ttc.term_id ) AS categories,
+			GROUP_CONCAT( ttt.term_id ) AS tags
+		, e.start as start, e.end as end, e.allday 
+			FROM wp_ai1ec_events e
+				LEFT JOIN wp_term_relationships tr
+					ON ( e.post_id = tr.object_id )
+				LEFT JOIN wp_term_taxonomy ttc
+					ON (
+						tr.term_taxonomy_id = ttc.term_taxonomy_id AND
+						ttc.taxonomy = 'events_categories'
+					)
+				LEFT JOIN wp_term_taxonomy ttt
+					ON (
+						tr.term_taxonomy_id = ttt.term_taxonomy_id AND
+						ttt.taxonomy = 'events_tags'
+					)
+				
+			WHERE e.post_id = 5
+			GROUP BY e.post_id made by wp_trash_post, do_action('trashed_post'), call_user_func_array, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_Event_Trashing->trash, Ai1ec_Event_Trashing->trash_children, Ai1ec_Event_Trashing->_manage_children, Ai1ec_Registry_Object->get, Ai1ec_Registry_Object->dispatch, Ai1ec_Factory_Event->create_event_instance, Ai1ec_Event->__construct, Ai1ec_Event->initialize_from_id, Ai1ec_Dbi->get_row
+[27-Jul-2015 16:02:53 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query SELECT 
+			e.post_id,
+			e.timezone_name,
+			e.recurrence_rules,
+			e.exception_rules,
+			e.allday,
+			e.instant_event,
+			e.recurrence_dates,
+			e.exception_dates,
+			e.venue,
+			e.country,
+			e.address,
+			e.city,
+			e.province,
+			e.postal_code,
+			e.show_map,
+			e.contact_name,
+			e.contact_phone,
+			e.contact_email,
+			e.contact_url,
+			e.cost,
+			e.ticket_url,
+			e.ical_feed_url,
+			e.ical_source_url,
+			e.ical_organizer,
+			e.ical_contact,
+			e.ical_uid,
+			e.longitude,
+			e.latitude,
+			e.show_coordinates,
+			GROUP_CONCAT( ttc.term_id ) AS categories,
+			GROUP_CONCAT( ttt.term_id ) AS tags
+		, e.start as start, e.end as end, e.allday 
+			FROM wp_ai1ec_events e
+				LEFT JOIN wp_term_relationships tr
+					ON ( e.post_id = tr.object_id )
+				LEFT JOIN wp_term_taxonomy ttc
+					ON (
+						tr.term_taxonomy_id = ttc.term_taxonomy_id AND
+						ttc.taxonomy = 'events_categories'
+					)
+				LEFT JOIN wp_term_taxonomy ttt
+					ON (
+						tr.term_taxonomy_id = ttt.term_taxonomy_id AND
+						ttt.taxonomy = 'events_tags'
+					)
+				
+			WHERE e.post_id = 36
+			GROUP BY e.post_id made by wp_nav_menu_update_menu_items, wp_delete_post, do_action('delete_post'), call_user_func_array, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_Event_Trashing->delete, Ai1ec_Event_Trashing->delete_children, Ai1ec_Event_Trashing->_manage_children, Ai1ec_Registry_Object->get, Ai1ec_Registry_Object->dispatch, Ai1ec_Factory_Event->create_event_instance, Ai1ec_Event->__construct, Ai1ec_Event->initialize_from_id, Ai1ec_Dbi->get_row
+[27-Jul-2015 16:02:53 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query DELETE FROM `wp_ai1ec_events` WHERE `post_id` = 36 made by wp_nav_menu_update_menu_items, wp_delete_post, do_action('delete_post'), call_user_func_array, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_Event_Trashing->delete, Ai1ec_Dbi->delete
+[27-Jul-2015 16:02:53 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_event_instances' doesn't exist for query DELETE FROM `wp_ai1ec_event_instances` WHERE `post_id` = 36 made by wp_nav_menu_update_menu_items, wp_delete_post, do_action('delete_post'), call_user_func_array, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_Event_Trashing->delete, Ai1ec_Event_Instance->clean, Ai1ec_Dbi->delete
+[27-Jul-2015 16:03:04 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query SELECT 
+			e.post_id,
+			e.timezone_name,
+			e.recurrence_rules,
+			e.exception_rules,
+			e.allday,
+			e.instant_event,
+			e.recurrence_dates,
+			e.exception_dates,
+			e.venue,
+			e.country,
+			e.address,
+			e.city,
+			e.province,
+			e.postal_code,
+			e.show_map,
+			e.contact_name,
+			e.contact_phone,
+			e.contact_email,
+			e.contact_url,
+			e.cost,
+			e.ticket_url,
+			e.ical_feed_url,
+			e.ical_source_url,
+			e.ical_organizer,
+			e.ical_contact,
+			e.ical_uid,
+			e.longitude,
+			e.latitude,
+			e.show_coordinates,
+			GROUP_CONCAT( ttc.term_id ) AS categories,
+			GROUP_CONCAT( ttt.term_id ) AS tags
+		, e.start as start, e.end as end, e.allday 
+			FROM wp_ai1ec_events e
+				LEFT JOIN wp_term_relationships tr
+					ON ( e.post_id = tr.object_id )
+				LEFT JOIN wp_term_taxonomy ttc
+					ON (
+						tr.term_taxonomy_id = ttc.term_taxonomy_id AND
+						ttc.taxonomy = 'events_categories'
+					)
+				LEFT JOIN wp_term_taxonomy ttt
+					ON (
+						tr.term_taxonomy_id = ttt.term_taxonomy_id AND
+						ttt.taxonomy = 'events_tags'
+					)
+				
+			WHERE e.post_id = 161
+			GROUP BY e.post_id made by wp_nav_menu_update_menu_items, wp_delete_post, do_action('delete_post'), call_user_func_array, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_Event_Trashing->delete, Ai1ec_Event_Trashing->delete_children, Ai1ec_Event_Trashing->_manage_children, Ai1ec_Registry_Object->get, Ai1ec_Registry_Object->dispatch, Ai1ec_Factory_Event->create_event_instance, Ai1ec_Event->__construct, Ai1ec_Event->initialize_from_id, Ai1ec_Dbi->get_row
+[27-Jul-2015 16:03:04 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query DELETE FROM `wp_ai1ec_events` WHERE `post_id` = 161 made by wp_nav_menu_update_menu_items, wp_delete_post, do_action('delete_post'), call_user_func_array, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_Event_Trashing->delete, Ai1ec_Dbi->delete
+[27-Jul-2015 16:03:04 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_event_instances' doesn't exist for query DELETE FROM `wp_ai1ec_event_instances` WHERE `post_id` = 161 made by wp_nav_menu_update_menu_items, wp_delete_post, do_action('delete_post'), call_user_func_array, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_Event_Trashing->delete, Ai1ec_Event_Instance->clean, Ai1ec_Dbi->delete

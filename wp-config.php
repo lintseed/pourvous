@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'bitnami_wordpress');
+define('DB_NAME', 'pourvous_2015');
 
 /** MySQL database username */
-define('DB_USER', 'bn_wordpress');
+define('DB_USER', 'pourvous_2015');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'ab21a7b1c1');
+define('DB_PASSWORD', 'Gwey6~14Gwey6~14');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost:3306');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -79,8 +79,8 @@ define('WP_DEBUG', false);
  *
 */
 
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress');
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress');
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/dev');
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/dev');
 
 
 /** Absolute path to the WordPress directory. */
