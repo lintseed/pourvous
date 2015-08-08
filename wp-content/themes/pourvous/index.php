@@ -10,7 +10,9 @@ The actual Blog page
 				<div id="inner-content">
 
 						<main id="main" class="m-all t-2of3 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-							
+								
+								<?php query_posts($query_string . '&category_name=blog'); ?><?php /* only display posts categorized blog */ ?>
+
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 									<div class="block-alt">

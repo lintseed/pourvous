@@ -86,17 +86,17 @@
 							echo do_shortcode('[wonderplugin_slider id="5"]');
 						} else if (is_page('legal')) {
 							echo do_shortcode('[wonderplugin_slider id="7"]');
-						} else if (is_page('blog')) {
+						} else if (is_page('blog') || is_category('blog') || is_home()) {
 							echo do_shortcode('[wonderplugin_slider id="8"]');
-						} else if (is_page('beer')) {
+						} else if (is_page('beer') || is_category('beer') || is_category('test-product')) {
 							echo do_shortcode('[wonderplugin_slider id="9"]');
-						} else if (is_page('wine')) {
+						} else if (is_page('wine') || is_category('wine')) {
 							echo do_shortcode('[wonderplugin_slider id="10"]');
-						} else if (is_page('spirits')) {
+						} else if (is_page('spirits') || is_category('spirits')) {
 							echo do_shortcode('[wonderplugin_slider id="11"]');
-						} else if (is_page('cigars')) {
+						} else if (is_page('cigars') || is_category('cigars')) {
 							echo do_shortcode('[wonderplugin_slider id="12"]');
-						} else if (is_page('party-supplies')) {
+						} else if (is_page('party-supplies') || is_category('party-supplies')) {
 							echo do_shortcode('[wonderplugin_slider id="13"]');
 						} else if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							the_post_thumbnail('full');
