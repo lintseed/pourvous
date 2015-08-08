@@ -74,11 +74,13 @@
 						</nav>
 						
 						<?php 
-						if (is_front_page()) {
+						if (is_page('contact-us')) {
+							echo do_shortcode('[wpgmza id="1"]');
+						} else if (is_front_page()) {
 							echo do_shortcode('[wonderplugin_slider id="2"]');
 						} else if (is_page('products')) {
 							echo do_shortcode('[wonderplugin_slider id="3"]');
-						} else if (is_page('donating')) {
+						} else if (is_page('donations')) {
 							echo do_shortcode('[wonderplugin_slider id="4"]');
 						} else if (is_page('party-planner')) {
 							echo do_shortcode('[wonderplugin_slider id="5"]');
