@@ -475,6 +475,16 @@ div.ginput_container {
 	width: auto;
 }
 
+/* whatever */
+.entry-content table.ai1ec-month-view,
+.entry-content .ai1ec-month-view td {
+	border-color: #5f4d21;
+}
+.entry-content .ai1ec-month-view .ai1ec-date a {
+	color: #c0b8ab;
+}
+
+
 /* ==========================================================================
 	 Tables
 	 ========================================================================== */
