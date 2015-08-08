@@ -1547,6 +1547,9 @@ CUSTOM THINGS
 	-webkit-border-radius: 2px 2px 2px 2px;
 	border: 2px solid #484743;
 }
+.archive .block h2 {
+	margin-bottom: 0;
+}
 .entry-content .block .gform_description {
 	clear: both;
 	display: block;
@@ -1596,7 +1599,8 @@ CUSTOM THINGS
 		font-size: 130%;
 		text-decoration: none;
 	}
-	.entry-content .block-alt img {
+	.entry-content .block-alt img,
+	.archive .block-alt img {
 		display: block;
 		margin: 5px auto 20px;
 		max-width: 200px;
@@ -1807,7 +1811,7 @@ POSTS & CONTENT STYLES
 	margin-bottom: 1.5em;
 /*	border: 1px solid #cccccc; */}
 	.hentry header {
-		border-bottom: 1px solid #f8f9fa;
+		border-bottom: 1px solid #5f4d21;
 		padding: 1.5em; }
 	.hentry footer {
 		}
@@ -1837,7 +1841,6 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-	padding: 1.5em 1.5em 0;
 	padding: 0;
 	/*
 	image alignment on a screen this size may be
@@ -1845,6 +1848,9 @@ POSTS & CONTENT STYLES
 	and floating images at the next breakpoint,
 	but it's up to you. Feel free to change it up.
 	*/ }
+	.single .entry-content {
+		padding: 30px;
+	}
 	.entry-content p {
 		margin: 0 0 1.5em; }
 	.entry-content table {
