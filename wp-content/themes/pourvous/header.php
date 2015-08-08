@@ -74,7 +74,29 @@
 						</nav>
 						
 						<?php 
-						if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+						if (is_front_page()) {
+							echo do_shortcode('[wonderplugin_slider id="2"]');
+						} else if (is_page('products')) {
+							echo do_shortcode('[wonderplugin_slider id="3"]');
+						} else if (is_page('donating')) {
+							echo do_shortcode('[wonderplugin_slider id="4"]');
+						} else if (is_page('party-planner')) {
+							echo do_shortcode('[wonderplugin_slider id="5"]');
+						} else if (is_page('legal')) {
+							echo do_shortcode('[wonderplugin_slider id="7"]');
+						} else if (is_page('blog')) {
+							echo do_shortcode('[wonderplugin_slider id="8"]');
+						} else if (is_page('beer')) {
+							echo do_shortcode('[wonderplugin_slider id="9"]');
+						} else if (is_page('wine')) {
+							echo do_shortcode('[wonderplugin_slider id="10"]');
+						} else if (is_page('spirits')) {
+							echo do_shortcode('[wonderplugin_slider id="11"]');
+						} else if (is_page('cigars')) {
+							echo do_shortcode('[wonderplugin_slider id="12"]');
+						} else if (is_page('party-supplies')) {
+							echo do_shortcode('[wonderplugin_slider id="13"]');
+						} else if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							the_post_thumbnail('full');
 						} 
 						?>
