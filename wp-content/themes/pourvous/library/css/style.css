@@ -475,13 +475,21 @@ div.ginput_container {
 	width: auto;
 }
 
-/* whatever */
-.entry-content table.ai1ec-month-view,
-.entry-content .ai1ec-month-view td {
+/* overrides, whatever */
+.entry-content table.ai1ec-month-view {
 	border-color: #5f4d21;
+}
+.entry-content .ai1ec-month-view td {
+	border: 1px solid #5f4d21 !important;
+}
+.entry-content .ai1ec-month-view td.ai1ec-empty {
+	background: #6b6450 !important;
 }
 .entry-content .ai1ec-month-view .ai1ec-date a {
 	color: #c0b8ab;
+}
+.ai1ec-month-view .ai1ec-today .ai1ec-date {
+	background: #947a37 !important;
 }
 
 
