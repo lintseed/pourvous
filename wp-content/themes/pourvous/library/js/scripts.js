@@ -116,9 +116,37 @@ jQuery(document).ready(function($) {
         type: 'inline',
         content: '#fancyboxID-1'
     });
+	});
+	
+   $(".modal").fancybox({
+   		'type': 'inline'
+	});
+   $("#beerbrigade").fancybox({
+		'modal' : true
+	});
+   $("#ted").fancybox({
+		'modal' : true
+	});
+   $("#brandy").fancybox({
+		'modal' : true
+	});
+	$("#rick").fancybox({
+		'titlePosition'		: 'inside',
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none'
+	});  
+   $("#jerilee").fancybox({
+		'titlePosition'		: 'inside',
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none'
+	});	
+   $("#gary").fancybox({
+		'titlePosition'		: 'inside',
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none'
+	});	 
+	
 
-    
-});
 
 
 }); /* end of as page load scripts */

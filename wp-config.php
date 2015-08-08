@@ -79,8 +79,8 @@ define('WP_DEBUG', false);
  *
 */
 
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/dev');
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/dev');
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/');
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/');
 
 
 /** Absolute path to the WordPress directory. */
