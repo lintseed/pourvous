@@ -413,6 +413,68 @@ textarea {
 	vertical-align: top;
 	/* 2 */ }
 
+
+/* Gravity Forms Overrides */
+/*
+li.gfield li,
+#field_3_2 {
+	clear: left;	
+}
+
+#field_3_3 {
+	clear: none;
+}
+.name_first,
+.name_last {
+	clear: none;
+	float: left;
+	width: 40%;
+}
+.name_first {
+	margin-right: 30px;
+}
+*/
+.gform_fields input[type="text"] {
+	margin-left: auto;
+	margin-right: auto;
+}
+.name_first input[type="text"],
+.name_last input[type="text"] {
+	margin-bottom: 2px;
+}
+.ginput_complex span {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.ginput_complex label {
+	font-size: 80%;
+}
+/* center. sad face. */
+.gfield {
+	overflow: hidden;
+    width: auto;
+    margin: 0 auto;
+    display: table;
+}
+div.ginput_container {
+	display: block;
+	overflow: hidden;
+	width: auto;
+}
+.gform_fields input[type="text"] {
+	margin-left: auto;
+	margin-right: auto;
+}
+.entry-content .gform_fields input[type="text"] {
+	min-width: 350px;
+}
+.gfield_label {
+	margin: 0 auto;
+	display: inline-block;
+	width: auto;
+}
+
 /* ==========================================================================
 	 Tables
 	 ========================================================================== */
