@@ -24,18 +24,20 @@
 									<div class="clear">
 							
 								<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-									
-									<div class="block-alt">
-										<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-											<h3><?php the_title(); ?></h3>
-											<?php 
-												if ( has_post_thumbnail() ) {
-													the_post_thumbnail('full');
-												} else {
-													the_excerpt();
-												} ?>
-										</a>
-									</div>
+																	
+									<?php if (in_category('home')) { ?>
+										<div class="block-alt">
+											<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+												<h3><?php the_title(); ?></h3>
+												<?php 
+													if ( has_post_thumbnail() ) {
+														the_post_thumbnail('full');
+													} else {
+														the_excerpt();
+													} ?>
+											</a>
+										</div>
+									<?php } ?>
 									
 								<?php endwhile; ?>
 

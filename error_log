@@ -1431,3 +1431,1488 @@
 				`e` . `allday`     DESC,
 				`i` . `start`      ASC,
 				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, Ai1ec_Front_Controller->route_request, Ai1ec_Command->execute, Ai1ec_Command_Export_Events->do_execute, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 20:54:30 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 20:57:54 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 20:59:57 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:00:33 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:00:36 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:04:55 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:09:34 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:09:37 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:09:48 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:10:20 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:11:17 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:12:55 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:13:00 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:13:12 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:15:49 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:15:52 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:15:53 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:15:54 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:15:54 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:17:39 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:17:41 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:17:56 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status IN ( 'publish', 'private' ) 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 21:20:35 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status = 'publish' 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 22:25:35 UTC] PHP Parse error:  syntax error, unexpected '||' (T_BOOLEAN_OR) in /home/donaldbonds/public_html/wp-content/themes/pourvous/header.php on line 93
+[08-Aug-2015 22:25:36 UTC] PHP Parse error:  syntax error, unexpected '||' (T_BOOLEAN_OR) in /home/donaldbonds/public_html/wp-content/themes/pourvous/header.php on line 93
+[08-Aug-2015 22:55:46 UTC] PHP Fatal error:  Call to undefined function is_index() in /home/donaldbonds/public_html/wp-content/themes/pourvous/header.php on line 89
+[08-Aug-2015 23:04:07 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1438387200 AND i.start < 1441065600 
+				
+				AND post_status = 'publish' 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/pourvous/page.php'), the_content, apply_filters('the_content'), call_user_func_array, do_shortcode, preg_replace_callback, do_shortcode_tag, call_user_func, Ai1ec_Event_Callback_Abstract->run, Ai1ec_Registry_Object->dispatch, Ai1ec_View_Calendar_Shortcode->shortcode, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 23:04:15 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1441065600 AND i.start < 1443657600 
+				
+				AND post_status = 'publish' 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, Ai1ec_Front_Controller->route_request, Ai1ec_Command->execute, Ai1ec_Command_Render_Calendar->do_execute, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
+[08-Aug-2015 23:04:18 UTC] WordPress database error Table 'pourvous_2015.wp_ai1ec_events' doesn't exist for query 
+			SELECT
+				`p`.*,
+				`e`.`post_id`,
+				`i`.`id` AS `instance_id`,
+				`i`.`start` AS `start`,
+				`i`.`end` AS `end`,
+				`e`.`timezone_name` AS `timezone_name`,
+				`e`.`allday` AS `event_allday`,
+				`e`.`recurrence_rules`,
+				`e`.`exception_rules`,
+				`e`.`recurrence_dates`,
+				`e`.`exception_dates`,
+				`e`.`venue`,
+				`e`.`country`,
+				`e`.`address`,
+				`e`.`city`,
+				`e`.`province`,
+				`e`.`postal_code`,
+				`e`.`instant_event`,
+				`e`.`show_map`,
+				`e`.`contact_name`,
+				`e`.`contact_phone`,
+				`e`.`contact_email`,
+				`e`.`contact_url`,
+				`e`.`cost`,
+				`e`.`ticket_url`,
+				`e`.`ical_feed_url`,
+				`e`.`ical_source_url`,
+				`e`.`ical_organizer`,
+				`e`.`ical_contact`,
+				`e`.`ical_uid`,
+				`e`.`longitude`,
+				`e`.`latitude`
+			FROM
+				wp_ai1ec_events e
+				INNER JOIN
+					wp_posts p
+						ON ( `p`.`ID` = `e`.`post_id` )
+				
+				INNER JOIN
+					wp_ai1ec_event_instances i
+					ON ( `e`.`post_id` = `i`.`post_id` )
+				
+			WHERE
+				post_type = 'ai1ec_event'
+				
+			AND
+				i.end > 1443657600 AND i.start < 1446339600 
+				
+				AND post_status = 'publish' 
+			GROUP BY
+				`i`.`id`
+			ORDER BY
+				`e` . `allday`     DESC,
+				`i` . `start`      ASC,
+				`p` . `post_title` ASC made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), call_user_func_array, Ai1ec_Front_Controller->route_request, Ai1ec_Command->execute, Ai1ec_Command_Render_Calendar->do_execute, Ai1ec_Calendar_Page->get_content, Ai1ec_Calendar_View_Month->get_content, Ai1ec_Calendar_View_Month->get_events_for_month, Ai1ec_Event_Search->get_events_between, Ai1ec_Dbi->get_results
