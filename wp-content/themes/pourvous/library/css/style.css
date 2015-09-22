@@ -2695,6 +2695,43 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+	/*********************
+	products
+	*********************/
+	#products ul li {
+		display: list-item;}
+
+	#logo {
+		position: initial;
+	}
+
+	img {
+		height: auto;
+		max-width: 100% !important;
+	}
+
+	.block.fancy {
+		width: 100% !important;
+	}
+
+	.entry-content .gform_fields input[type="text"] {
+		max-width: 100%;
+	}
+
+	div.ginput_container {
+		max-width: 320px;
+	}
+
+	#sidebar-head .triangle-up-right,
+	#sidebar-head .triangle-top-left {
+		display: none;
+	}
+}
+
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2822,6 +2859,8 @@ you can add resource intensive styles.
 	.wrap,
 	.gallery {
 	width: 760px; }
+
+
 
 	/*********************
 	HEADER STYLES

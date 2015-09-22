@@ -98,6 +98,8 @@
 							echo do_shortcode('[wonderplugin_slider id="12"]');
 						} else if (is_page('party-supplies') || is_category('party-supplies')) {
 							echo do_shortcode('[wonderplugin_slider id="13"]');
+						} else if (is_page('party-supplies') || is_category('event-calendar')) {
+							echo do_shortcode('[wonderplugin_slider id="14"]');
 						} else if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 							the_post_thumbnail('full');
 						} 
